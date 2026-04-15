@@ -4,9 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Test</title>
+    <!-- Alpine -->
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    <!--  -->
+
+    <!-- Tailwind -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <!--  -->
 </head>
-<body>
+<body x-data="{nama:'Andy'}">
     <h1>Test</h1>
+    <p class="text-rose-500">Halo, <span x-text="nama" class="underline"></span></p>
 
     <p>Ini adalah paragraf yg ditambahkan dari branch staff</p>
 
