@@ -12,13 +12,34 @@
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <!--  -->
 </head>
-<body x-data="{nama:'Andy'}">
-    <h1>Test</h1>
-    <p class="text-rose-500">Halo, <span x-text="nama" class="underline"></span></p>
+<body x-data="{nama:'Andy'}" class="w-full border flex flex-col gap-2 h-screen text-gray-600">
+    <div class="w-full flex gap-2 flex-col h-screen justify-between">
+        <div class="navbar w-full px-30 py-2 flex flex-row justify-between items-center shadow-md">
+            <h1 class="font-semibold text-2xl">Logo x</h1>
 
-    <p>Ini adalah paragraf yg ditambahkan dari branch staff</p>
+            <nav class="flex gap-4">
+                <a href="#">Home</a>
+                <a href="#">Services</a>
+                <a href="#">About</a>
+            </nav>
+        </div>
 
-    <p>Menambahkan paragraf dari halaman github</p>
+        <div class="content px-30 py-2">
+            <h1>My Content</h1>
+
+            <div class="cards ">
+                <div class="card"></div>
+            </div>
+        </div>
+
+        <footer class="w-full shadow-md px-30 py-2">
+            <h1>Footer</h1>
+
+            <div class="flex gap-2">
+                <p>Coded by <a href="#">@andyxforce</a></p>
+            </div>
+        </footer>
+    </div>
     
 </body>
 </html>
